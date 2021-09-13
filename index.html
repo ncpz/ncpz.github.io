@@ -11,7 +11,7 @@
     />
 
     <!--==================== SWIPER CSS ====================-->
-    <link rel="stylesheet" href="" />
+    <link rel="stylesheet" href="assets/css/swiper-bundle.min.css" />
 
     <!--==================== CSS ====================-->
     <link rel="stylesheet" href="assets/css/styles.css" />
@@ -184,7 +184,7 @@
             <div class="about__buttons">
               <a
                 download="Official-PeachyLine-CV"
-                href="assets/pdf/Alexa-Cv.pdf"
+                href="assets/pdf/linhngo_portfolio.pdf"
                 class="button button--flex"
               >
                 Download CV<i class="uil uil-download-alt button__icon"></i>
@@ -487,7 +487,7 @@
               "
             >
               View more!
-              <i class="uil uil-arrow-right button-icon"></i>
+              <i class="uil uil-arrow-right button__icon"></i>
             </span>
 
             <div class="services__modal">
@@ -496,7 +496,7 @@
                   3D <br />
                   Designer
                 </h4>
-                <i class="uil uil-times servoces__modal-close"></i>
+                <i class="uil uil-times services__modal-close"></i>
 
                 <ul class="services__modal-services grid">
                   <li class="services__modal-service">
@@ -536,16 +536,16 @@
               "
             >
               View more!
-              <i class="uil uil-arrow-right button-icon"></i>
+              <i class="uil uil-arrow-right button__icon"></i>
             </span>
 
             <div class="services__modal">
               <div class="services__modal-content">
                 <h4 class="services__modal-title">
-                  3D <br />
+                  Logo <br />
                   Designer
                 </h4>
-                <i class="uil uil-times servoces__modal-close"></i>
+                <i class="uil uil-times services__modal-close"></i>
 
                 <ul class="services__modal-services grid">
                   <li class="services__modal-service">
@@ -573,7 +573,7 @@
             <div>
               <i class="uil uil-arrow services__icon"></i>
               <h3 class="services__title">
-                3D <br />
+                yes <br />
                 Design
               </h3>
             </div>
@@ -585,7 +585,7 @@
               "
             >
               View more!
-              <i class="uil uil-arrow-right button-icon"></i>
+              <i class="uil uil-arrow-right button__icon"></i>
             </span>
 
             <div class="services__modal">
@@ -594,7 +594,7 @@
                   3D <br />
                   Designer
                 </h4>
-                <i class="uil uil-times servoces__modal-close"></i>
+                <i class="uil uil-times services__modal-close"></i>
 
                 <ul class="services__modal-services grid">
                   <li class="services__modal-service">
@@ -621,13 +621,131 @@
       </section>
 
       <!--==================== PORTFOLIO ====================-->
-      <section class="portfolio section" id="portfolio"></section>
+      <section class="portfolio section" id="portfolio">
+        <h2 class="section__title">Portfolio</h2>
+        <span class="section__subtitle">Most recent work</span>
+
+        <div class="portfolio__container container swiper">
+          <div class="swiper-wrapper">
+            <!--==================== PORTFOLIO 1====================-->
+            <div class="portfolio__content grid swiper-slide">
+              <img
+                src="assets/img/portfolio1.jpg"
+                alt=""
+                class="portfolio__img"
+              />
+
+              <div class="portfolio__data">
+                <h3 class="portfolio__title">Modern website</h3>
+                <p class="portfolio__description">yes yes</p>
+                <a
+                  href="#"
+                  class="button button--flex button--small portfolio__button"
+                >
+                  Demo
+                  <i class="uil uil-arrow-right button__icon"></i>
+                </a>
+              </div>
+            </div>
+            <!--==================== PORTFOLIO 2====================-->
+            <div class="portfolio__content grid swiper-slide">
+              <img
+                src="assets/img/portfolio2.jpg"
+                alt=""
+                class="portfolio__img"
+              />
+
+              <div class="portfolio__data">
+                <h3 class="portfolio__title">brand design</h3>
+                <p class="portfolio__description">yes yes</p>
+                <a
+                  href="#"
+                  class="button button--flex button--small portfolio__button"
+                >
+                  Demo
+                  <i class="uil uil-arrow-right button__icon"></i>
+                </a>
+              </div>
+            </div>
+            <!--==================== PORTFOLIO 3====================-->
+            <div class="portfolio__content grid swiper-slide">
+              <img
+                src="assets/img/portfolio3.jpg"
+                alt=""
+                class="portfolio__img"
+              />
+
+              <div class="portfolio__data">
+                <h3 class="portfolio__title">anything</h3>
+                <p class="portfolio__description">yes yes</p>
+                <a
+                  href="#"
+                  class="button button--flex button--small portfolio__button"
+                >
+                  Demo
+                  <i class="uil uil-arrow-right button__icon"></i>
+                </a>
+              </div>
+            </div>
+          </div>
+
+          <!-- Add Arrows -->
+          <div class="swiper-button-next">
+            <i class="uil uil-angle-right-b swiper-portfolio-icon"></i>
+          </div>
+          <div class="swiper-button-prev">
+            <i class="uil uil-angle-left-b swiper-portfolio-icon"></i>
+          </div>
+
+          <!-- Add Pagination -->
+          <div class="swiper-pagination"></div>
+        </div>
+      </section>
 
       <!--==================== PROJECT IN MIND ====================-->
-      <section class="project section"></section>
+      <section class="project section">
+        <div class="project__bg">
+          <div class="project__container container grid">
+            <div class="project__data">
+              <h2 class="project__title">You have a new project</h2>
+              <p class="project__description">contact nowwww</p>
+              <a href="#contact" class="button button--flex button--white">
+                Contact me
+                <i class="uil uil-message project__icon button__icon"></i>
+              </a>
+            </div>
+
+            <img src="" alt="" class="project__img" />
+          </div>
+        </div>
+      </section>
 
       <!--==================== TESTIMONIAL ====================-->
-      <section class="testimonial section"></section>
+      <section class="testimonial section">
+        <h2 class="section__title">Testimonial</h2>
+        <span class="section__subtitle">My clients saying</span>
+
+        <div class="testimonial__container container">
+          <div>
+            <!--==================== TESTIMONIAL 1====================-->
+            <div class="testimonial__content">
+              <div class="testimonial__data">
+                <div class="testimonial__header">
+                  <img
+                    src="assets/img/testimonial1.jpg"
+                    alt=""
+                    class="testimonial__img"
+                  />
+
+                  <div>
+                    <h3 class="testimonial__name"></h3>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
 
       <!--==================== CONTACT ME ====================-->
       <section class="contact section" id="contact"></section>
@@ -639,7 +757,7 @@
     <!--==================== SCROLL TOP ====================-->
 
     <!--==================== SWIPER JS ====================-->
-    <script src=""></script>
+    <script src="assets/js/swiper-bundle.min.js"></script>
 
     <!--==================== MAIN JS ====================-->
     <script src="assets/js/main.js"></script>
