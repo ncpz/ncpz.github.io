@@ -922,7 +922,7 @@ project__bg {
 .footer__copy {
   font-size: var(--small-font-size);
   text-align: center;
-  color: var(--text-color-light);
+  color: var(--text-color);
   margin-top: var(--mb-3);
 }
 
