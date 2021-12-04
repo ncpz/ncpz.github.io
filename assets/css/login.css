@@ -68,6 +68,14 @@ html {
     align-items: center;
     background-color: var(--first-color);
   }
+
+  .logo-img{
+    margin-left: 270px;
+    width: 20%;
+    height: 20%;
+    padding-bottom: 20px;
+  }
+
   #main-holder {
     width: 50%;
     height: 70%;
@@ -85,6 +93,7 @@ html {
     display: grid;
     justify-items: center;
     align-items: center;
+    padding-top: 5px;
   }
   
   #login-error-msg {
