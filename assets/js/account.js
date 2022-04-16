@@ -28,7 +28,7 @@ window.onload = function init() {
       try {
         let user = await auth.signInWithEmailAndPassword(email, password);
         if (user) {
-          window.location = "./index.html";
+          window.location = "/index.html";
         }
       } catch (error) {
         console.log(error.code);
