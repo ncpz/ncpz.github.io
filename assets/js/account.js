@@ -2,6 +2,10 @@ window.onload = function init() {
     const auth = firebase.auth();
     const db = firebase.firestore();
     const loginErrorMsg = document.getElementById("login-error-msg");
+    const signupErrorMsg = document.getElementById("signup-error-msg")
+
+    function disableSubmit() {
+  document.getElementById("submit").disabled = true;}
 
     let email = document.querySelector("#signup-email");
     let pass = document.querySelector("#signup-pass");
@@ -20,7 +24,7 @@ window.onload = function init() {
         console.log(user);
       } catch (error) {
         console.log(error.code);
-        loginErrorMsg.style.opacity = 1;
+        signupErrorMsg.style.opacity = 1;
       }
     }
   

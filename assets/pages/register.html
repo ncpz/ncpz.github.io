@@ -1,54 +1,56 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
-    <link rel="stylesheet" href="">
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Sign Up Page</title>
+  <link rel="stylesheet" href="/assets/css/signup.css">
+  <script src="/assets/js/account.js"></script>
+  <script src="https://www.gstatic.com/firebasejs/8.10.0/firebase-app.js"></script>
+  <script src="https://www.gstatic.com/firebasejs/8.10.0/firebase-auth.js"></script>
+  <script src="https://www.gstatic.com/firebasejs/8.10.0/firebase-firestore.js"></script>
+  <!--==================== PAGE ICON ====================-->
+  <link rel="icon" href="/assets/img/circle-cropped.png"> 
 </head>
+
 <body>
-    <section class="login">
-        <div class="login-hny">
-            <div class="form-content">
-                <div class="form-right">
-                    <div class="overlay">
-                        <div class="grid-info-form">
-                            <h5>Welcome!</h5>
-                            <h3>Signup now</h3>
-                            <p>Sign up for free to order and track services.</p>
-                            <a href="/assets/html/login.html" class="login-ref"></a>
-                        </div>
-                    </div>
-                </div>
-                <div class="form-left">
-					<div class="middle">
-						<h4>Join Us</h4>
-						<p>Create Your Account, It's Free.</p>
-					</div>
-					<form action="#" method="post" class="signin-form">
-							<div class="form-input">
-								<label>Name</label>
-								<input type="text" name="" placeholder="" required />
-							</div>
-							<div class="form-input">
-								<label>Email</label>
-								<input type="email" name="" placeholder="" required />
-							</div>
-							<div class="form-input">
-								<label>Password</label>
-								<input type="password" name="" placeholder="" required />
-							</div>
-							
-							<label class="container">I agree to <a href="#">Conditions</a> of Use and <a href="#">Privacy</a>
-								<input type="checkbox">
-								<span class="checkmark"></span>
-							</label>
-							<button class="btn">Create account</button>
-					</form>
-				</div>
-            </div>
-        </div>
-    </section>
+  <main id="main-holder">
+    <h1 id="signup-header">Sign up</h1>
+    <a href="/index.html">
+        <img class="signup-img" src="/assets/img/circle-cropped.png" alt="">
+    </a>
+    
+    <div id="signup-error-msg-holder">
+      <p id="signup-error-msg">Account registered already</p>
+    </div>
+    
+    <div class="form-signup-wrapper">
+      <form action="" class="signup-form form-css">
+        <label for="signup-email">Email</label>
+        <input type="email" id="signup-email">
+        <label for="signup-pass">Password</label>
+        <input type="password" id="signup-pass">
+        <label class="signup-terms">I agree to <a href="termsnconditions.html">Conditions of Use and Privacy</a>
+        <input type="checkbox">
+        <span class="checkmark"></span>
+        </label>
+        <button id="signup-btn" type="submit">SIGN UP</button>
+      </form>
+    </div>
+    <a style="margin-top: 10px; display: block; text-align: center;" href="./login.html">Already have an account? Login.</a>
+  
+  </main>
 </body>
+<script type="module">
+  firebase.initializeApp({
+  apiKey: "AIzaSyBqJBEOP5KQeIBfdpYvGl6uzAxR7rdPmB0",
+  authDomain: "peachylinegithub.firebaseapp.com",
+  projectId: "peachylinegithub",
+  storageBucket: "peachylinegithub.appspot.com",
+  messagingSenderId: "1057852696665",
+  appId: "1:1057852696665:web:41443e17b22fd351aaa948",
+  measurementId: "G-BW61ESD2G6"
+});
+</script>
 </html>
