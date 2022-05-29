@@ -194,6 +194,10 @@ img {
   color: var(--first-color);
 }
 
+#tech-btn{
+  opacity: 0;
+}
+
 .nav__toggle {
   font-size: 1.1rem;
   cursor: pointer;
@@ -221,6 +225,7 @@ img {
   grid-template-columns: repeat(3, 1fr);
   gap: 2rem;
 }
+
 
 .nav__link {
   display: flex;

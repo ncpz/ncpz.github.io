@@ -3,6 +3,7 @@ window.onload = function init() {
     const db = firebase.firestore();
     const loginErrorMsg = document.getElementById("login-error-msg");
     const signupErrorMsg = document.getElementById("signup-error-msg")
+    const techBtn = document.getElementById("tech-btn")
 
     function disableSubmit() {
   document.getElementById("submit").disabled = true;}
@@ -33,6 +34,7 @@ window.onload = function init() {
         let user = await auth.signInWithEmailAndPassword(email, password);
         if (user) {
           window.location = "/index.html";
+          techBtn.style.opacity = 1;
         }
       } catch (error) {
         console.log(error.code);

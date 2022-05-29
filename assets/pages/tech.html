@@ -1,48 +1,57 @@
-<!doctype html>
+<!DOCTYPE html>
 <html>
-    <head>
-        <meta charset="utf-8" />
-        <title>Users</title>
-        <link rel="stylesheet" href="/assets/css/tech.css" />
-		<script src="https://www.gstatic.com/firebasejs/8.10.0/firebase-app.js"></script>
-  		<script src="https://www.gstatic.com/firebasejs/8.10.0/	firebase-auth.js"></script>
-  		<script src="https://www.gstatic.com/firebasejs/8.10.0/firebase-database.js"></script>
-    </head>
-    <body>
-        <h1>
-            User list
-            <br />
-            <small>
-                <em>Yes</em>
-            </small>
-        </h1>
-        <ul id="userList"></ul>
-        <div id="userDetail">
-            <p>
-                Name :
-                <strong class="detailName"></strong>
-            </p>
-            <p>
-                Age:
-                <strong class="detailAge"></strong>
-            </p>
-            <p>
-                Email:
-                <strong class="detailEmail"></strong>
-            </p>
-        </div>
-        <script type="module">
-			firebase.initializeApp({
-			apiKey: "AIzaSyBqJBEOP5KQeIBfdpYvGl6uzAxR7rdPmB0",
-			authDomain: "peachylinegithub.firebaseapp.com",
-			projectId: "peachylinegithub",
-			storageBucket: "peachylinegithub.appspot.com",
-			messagingSenderId: "1057852696665",
-			appId: "1:1057852696665:web:41443e17b22fd351aaa948",
-			measurementId: "G-BW61ESD2G6"
-		  });
-		</script>
-        <script type="text/javascript" src="/assets/js/app.js"></script>
-		
-    </body>
+  <head>
+    <meta charset="utf-8">
+    <title>Tech</title>
+    <link rel="stylesheet" href="/assets/css/tech.css">
+  </head>
+  <body>
+
+    <h1>Admin
+        <br/><small><em>Users</em></small>
+    </h1>
+
+
+    <!-- add user module -->
+    <section id="add-user-module" >
+        <button id="open-add-user-form-btn">+</button>
+        <form>
+            <h2>Add User</h2>
+            name:<br>
+            <input type='text' data-key='name' class='user-input'><br>
+            age:<br>
+            <input type='text' data-key='age' class='user-input'><br>
+            email:<br>
+            <input type='text' data-key='email' class='user-input'><br>
+            <button type='button' id="add-user-btn">add user</button>
+        </form>
+    </section>
+
+    <!-- edit user module -->
+    <section id="edit-user-module">
+        <form>
+            <h2>Edit user</h2>
+            <input type="hidden" class="edit-userid">
+            name:<br>
+            <input type='text' data-key='name' class='edit-user-input'><br>
+            age:<br>
+            <input type='text' data-key='age' class='edit-user-input'><br>
+            email:<br>
+            <input type='text' data-key='email' class='edit-user-input'><br>
+            <button type='button' id="edit-user-btn">save</button>
+        </form>
+    </section>
+
+
+    <!-- show user module -->
+    <ul id="user-list"></ul>
+    <div id="user-detail"></div>
+
+
+    <script src="https://www.gstatic.com/firebasejs/8.1.0/firebase.js"></script>
+    <script type="text/javascript" src="/assets/js/app.js"></script>
+    <script type="text/javascript" src="/assets/js/account.js"></script>
+
+  </body>
+
 </html>
