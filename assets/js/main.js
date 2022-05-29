@@ -1,9 +1,9 @@
-/*==================== MENU SHOW Y HIDDEN ====================*/
+/*==================== hien menu ====================*/
 const navMenu = document.getElementById('nav-menu'),
     navToggle = document.getElementById('nav-toggle'),
     navClose = document.getElementById('nav-close')
 
-/*===== MENU SHOW =====*/
+/*===== hien menu =====*/
 /* Validate if constant exists */
 if(navToggle){
     navToggle.addEventListener('click', ()=>{
@@ -11,7 +11,7 @@ if(navToggle){
     })
 }
 
-/*===== MENU HIDDEN =====*/
+/*===== tat menu =====*/
 /* Validate if constant exists */
 if(navClose){
     navClose.addEventListener('click', ()=>{
@@ -19,17 +19,17 @@ if(navClose){
     })
 }
 
-/*==================== REMOVE MENU MOBILE ====================*/
+/*==================== tat menu ====================*/
 const navLink = document.querySelectorAll('.nav__link')
 
 function linkAction(){
     const navMenu = document.getElementById('nav-menu')
-    // When we click on each nav__link, we remove the show-menu class
+    
     navMenu.classList.remove('show-menu')
 }
 navLink.forEach(n => n.addEventListener('click', linkAction))
 
-/*==================== ACCORDION SKILLS ====================*/
+/*==================== skill ====================*/
 const skillsContent = document.getElementsByClassName('skills__content'),
       skillsHeader = document.querySelectorAll('.skills__header') 
 
@@ -48,7 +48,7 @@ skillsHeader.forEach((el)=>{
     el.addEventListener('click', toggleSkills)
 })
 
-/*==================== QUALIFICATION TABS ====================*/
+/*==================== bang cap ====================*/
 const tabs =document.querySelectorAll('[data-target]'),
       tabContents = document.querySelectorAll('[data-content]')
 
@@ -68,7 +68,7 @@ tabs.forEach(tab=>{
     })
 })
 
-/*==================== SERVICES MODAL ====================*/
+/*==================== cong viec ====================*/
 const modalViews = document.querySelectorAll('.services__modal'),
     modalBtns = document.querySelectorAll('.services__button'),
     modalCloses = document.querySelectorAll('.services__modal-close')
@@ -105,7 +105,7 @@ let swiperPortfolio = new Swiper('.portfolio__container', {
       clickable: true,
     },
 });
-/*==================== TESTIMONIAL ====================*/
+/*==================== khach hang ====================*/
 let swiperTestimonial = new Swiper('.testimonial__container', {
     loop: true,
     grabCursor: true,
